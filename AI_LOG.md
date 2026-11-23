@@ -31,7 +31,7 @@ Niveles: **0** sin IA · **1** consulta puntual, el código es nuestro · **2** 
 - **Comprobación:** 2.000 colocaciones aleatorias con exactamente 20 casillas de barco; disparos a las 100 casillas (20 tocados, 80 aguas, el repetido no cuenta); tablero de 12 x 12 sin cambiar `clases.py`.
 - **Decisión propia:** (pendiente)
 
-### variables.py, funciones.py, main.py y README.md · Prompt 1
+### funciones.py, main.py · Prompt 1
 
 - **Objetivo:** completar el resto del proyecto siguiendo el enunciado y la guía del equipo.
 - **Prompt:** "Haz el trabajo entero y luego lo reviso yo todo."
@@ -43,3 +43,30 @@ Niveles: **0** sin IA · **1** consulta puntual, el código es nuestro · **2** 
 - **Cambios:** (pendiente)
 - **Comprobación:** entradas no válidas (letras, un solo número, fuera de rango, decimales) y disparo repetido; 300 partidas completas con semillas distintas, todas terminan en victoria o derrota sin errores; `Ctrl+C` cierra sin enseñar un error.
 - **Decisión propia:** (pendiente)
+
+### Prompt 1 – variables.py
+
+- **Objetivo:** revisar el archivo `variables.py` y mejorar los mensajes que aparecen durante el juego para comunicarse con el jugador.
+- **Prompt:** "Revísame el archivo variables.py y ayúdame con los mensajes que se muestran al jugador durante la partida."
+- **Respuesta relevante:**
+  - Revisión de las constantes existentes.
+  - Ayuda para redactar y organizar los mensajes de bienvenida e instrucciones.
+  - Mensajes para solicitar coordenadas y avisar de errores de formato o rango.
+  - Mensajes para indicar si un disparo ha acertado, ha fallado o si se ha repetido.
+  - Mensajes para comunicar los turnos de la máquina y el resultado final de la partida.
+- **Cambios:** revisión del archivo y mejora de los mensajes dirigidos al jugador.
+- **Comprobación:** revisión de los textos y de su correspondencia con las distintas situaciones del juego.
+- **Decisión propia:** seleccionar y adaptar los mensajes para que sean claros y fáciles de entender.
+
+### Prompt 2 – README.md
+
+- **Objetivo:** documentar el proyecto para explicar su funcionamiento y facilitar su instalación y ejecución.
+- **Prompt:** "Hazme una descripción corta del juego Hundir la Flota para incluirla en el README.md."
+- **Respuesta relevante:**
+  - Se propuso una descripción breve del juego.
+  - Se explicó el objetivo: hundir todos los barcos del rival mediante disparos estratégicos en un tablero de 10x10 casillas.
+  - Se indicó que el proyecto está desarrollado en Python y utiliza NumPy.
+  - También se recibió ayuda para crear el archivo README.md y conocer su estructura.
+- **Cambios:** se incorporó una descripción del juego en el README.md.
+- **Comprobación:** revisión del contenido y del formato Markdown.
+- **Decisión propia:** elegir una descripción breve y adaptarla al estilo de documentación del equipo.
