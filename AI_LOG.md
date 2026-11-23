@@ -14,7 +14,7 @@ Niveles: **0** sin IA · **1** consulta puntual, el código es nuestro · **2** 
 
 | Módulo | Quién lo ha llevado | Nivel de IA (0-3) | Nº de prompts | ¿Lo podríais repetir sin IA? (sí / en parte / no) |
 |---|---|---|---|---|
-| `variables.py` | Scrum Master (versión inicial) | (Scrum Master) |1| | 1 | |
+| `variables.py` | Scrum Master (versión inicial) | 1 | 1 | |
 | `clases.py` | Dev 1 | 3 | 1 | |
 | `funciones.py` | Dev 1 | 3 | 1 | |
 | `main.py` | Dev 1 | 3 | 1 | |
