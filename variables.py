@@ -13,15 +13,9 @@ TAMANO_TABLERO = 10
 # Barcos: nombre y eslora (número de casillas que ocupa cada uno).
 # 4 barcos de 1, 3 de 2, 2 de 3 y 1 de 4: en total, 20 casillas.
 BARCOS = {
-    "lancha_1": 1,
-    "lancha_2": 1,
-    "lancha_3": 1,
-    "lancha_4": 1,
-    "destructor_1": 2,
-    "destructor_2": 2,
-    "destructor_3": 2,
-    "submarino_1": 3,
-    "submarino_2": 3,
+    "lancha_1": 1, "lancha_2": 1, "lancha_3": 1, "lancha_4": 1,
+    "destructor_1": 2, "destructor_2": 2, "destructor_3": 2,
+    "submarino_1": 3, "submarino_2": 3,
     "acorazado": 4,
 }
 TOTAL_CASILLAS_BARCOS = sum(BARCOS.values())
@@ -46,26 +40,18 @@ TOCADO = "X"
 JUGADOR = "jugador"
 MAQUINA = "máquina"
 
+
 # Mensajes para el jugador
-BIENVENIDA = "Bienvenid@ a Hundir la Flota"
+INICIO = "¡Bienvenido/a a Hundir la Flota!"
+
 INSTRUCCIONES = (
-    f"Cada jugador tiene un tablero de {TAMANO_TABLERO} x {TAMANO_TABLERO} "
-    "con los barcos colocados al azar.\n"
-    "En cada turno escribe la fila y la columna a la que quieres disparar, "
-    f"de 0 a {TAMANO_TABLERO - 1} (por ejemplo, 3 7).\n"
-    "Si aciertas, vuelves a disparar. Si das en agua, dispara la máquina.\n"
-    f"Gana quien toque primero las {TOTAL_CASILLAS_BARCOS} casillas de barco del rival.\n"
-    f"Símbolos: {AGUA} agua, {BARCO} barco, {AGUA_DISPARADA} disparo en agua, "
-    f"{TOCADO} barco tocado.\n"
+    "Los barcos se colocan al azar. Tienes 4 barcos de 1 casilla, "
+    "3 de 2 casillas, 2 de 3 casillas y 1 de 4 casillas. "
+    "En cada turno, escribe la fila y la columna (de 0 a 9) "
+    "a la que quieres disparar."
 )
-PEDIR_COORDENADAS = "Fila y columna: "
-ERROR_FORMATO = "Entrada no válida: escribe dos números separados por un espacio, por ejemplo 3 7."
-ERROR_RANGO = f"Coordenada fuera del tablero: la fila y la columna van de 0 a {TAMANO_TABLERO - 1}."
-DISPARO_REPETIDO = "Ya habías disparado a esa casilla. Elige otra."
-ACERTADO = "Has acertado, puedes volver a disparar."
-FALLADO = "Agua. Ahora dispara la máquina."
-MAQUINA_ACIERTA = "La máquina te ha tocado en ({}, {}) y vuelve a disparar."
-MAQUINA_FALLA = "La máquina ha disparado a ({}, {}) y ha dado en agua."
-GANADO = "Enhorabuena, has ganado."
-PERDIDO = "Has perdido la partida. Vuelve a jugar e inténtalo de nuevo."
-PARTIDA_INTERRUMPIDA = "Partida interrumpida. Hasta la próxima."
+
+ACERTADO = "¡Has acertado! Puedes volver a disparar."
+FALLADO = "No has acertado. Le toca al otro jugador."
+GANADO = "¡Enhorabuena, has ganado!"
+PERDIDO = "Has perdido la partida. ¡Inténtalo de nuevo!"
