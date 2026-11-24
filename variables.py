@@ -42,7 +42,7 @@ MAQUINA = "máquina"
 
 
 # Mensajes para el jugador
-INICIO = "¡Bienvenido/a a Hundir la Flota!"
+BIENVENIDA = "¡Bienvenido/a a Hundir la Flota!"
 
 INSTRUCCIONES = (
     "Los barcos se colocan al azar. Tienes 4 barcos de 1 casilla, "
@@ -50,6 +50,13 @@ INSTRUCCIONES = (
     "En cada turno, escribe la fila y la columna (de 0 a 9) "
     "a la que quieres disparar."
 )
+PEDIR_COORDENADAS = "Introduce las coordenadas donde quieres disparar (fila y columna): "
+ERROR_FORMATO = "Entrada no válida. Introduce dos números separados por una coma (ej. 3,5)."
+ERROR_RANGO = "Coordenadas fuera del tablero. Introduce valores entre 0 y 9."
+DISPARO_REPETIDO = "Ya has disparado a esa casilla. ¡Prueba con otra!"
+MAQUINA_ACIERTA = "¡La máquina ha acertado en tu barco!"
+MAQUINA_FALLA = "La máquina ha fallado. ¡Tu barco sigue a salvo!"
+PARTIDA_INTERRUMPIDA = "\nPartida interrumpida. ¡Gracias por jugar a Hundir la Flota!"
 
 ACERTADO = "¡Has acertado! Puedes volver a disparar."
 FALLADO = "No has acertado. Le toca al otro jugador."
