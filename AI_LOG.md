@@ -15,7 +15,7 @@ Niveles: **0** sin IA · **1** consulta puntual, el código es nuestro · **2** 
 | Módulo | Quién lo ha llevado | Nivel de IA (0-3) | Nº de prompts | ¿Lo podríais repetir sin IA? (sí / en parte / no) |
 |---|---|---|---|---|
 | `variables.py` | Scrum Master (versión inicial) | 1 | 1 | |
-| `clases.py` | Dev 1 | 3 | 1 | |
+| `clases.py` | Dev 1 | 2 | 5 | |
 | `funciones.py` | Dev 1 | 3 | 1 | |
 | `main.py` | Dev 1 | 3 | 1 | |
 | `README.md` | Scrum Master | 1 | 1 | |
@@ -24,12 +24,12 @@ Niveles: **0** sin IA · **1** consulta puntual, el código es nuestro · **2** 
 
 ### clases.py · Prompt 1
 
-- **Objetivo:** implementar la clase `Tablero` del issue #2 con todo el código explicado.
-- **Prompt:** "Sí, hazlo, pero quiero que todo quede explicado."
-- **Respuesta relevante:** clase `Tablero` con los arrays `tablero` y `disparos`, `colocar_barcos()` con casilla de inicio y orientación N/S/E/O al azar, `recibir_disparo()` que devuelve tocado, agua o repetido, `quedan_barcos()` y `mostrar()` con opción para ocultar los barcos. Docstrings en formato Google y comentarios en los pasos menos obvios.
-- **Cambios:** (pendiente)
-- **Comprobación:** 2.000 colocaciones aleatorias con exactamente 20 casillas de barco; disparos a las 100 casillas (20 tocados, 80 aguas, el repetido no cuenta); tablero de 12 x 12 sin cambiar `clases.py`.
-- **Decisión propia:** (pendiente)
+- **Objetivo:** reescribir a mano la clase `Tablero` del issue #2, que es la parte que me toca, en lugar de entregar la versión generada por la IA.
+- **Prompt:** "Lo reescribimos a mano, es la parte que me toca a mí." Después, "No sé cómo hacerlo", y la IA lo explicó por trozos.
+- **Respuesta relevante:** la clase dividida en cuatro pasos (constructor, `colocar_barcos()`, `recibir_disparo()`, y `quedan_barcos()` con `mostrar()`), cada uno con el código y la explicación de cada línea: por qué hay dos arrays, por qué se comprueba que la casilla está dentro del tablero antes de leer el array (en NumPy un índice negativo no da error) y por qué el disparo repetido se mira primero.
+- **Cambios:** el código lo escribí yo en VS Code siguiendo la explicación. La IA corrigió la sangría (había métodos fuera de la clase y `cabe = True` dentro del bucle equivocado) y me explicó por qué estaba mal.
+- **Comprobación:** 500 tableros aleatorios con exactamente 20 casillas de barco; disparos a las 100 casillas (20 tocados, 80 aguas, el repetido no cuenta); `mostrar(ocultar_barcos=True)` no enseña los barcos; `quedan_barcos()` pasa a `False` al tocarlo todo.
+- **Decisión propia:** quedarme con `clases.py` como mi parte y escribirla yo para poder explicarla en la presentación.
 
 ### funciones.py, main.py · Prompt 1
 
